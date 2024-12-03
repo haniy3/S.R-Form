@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="SR styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Student Registration Form</h1>
+    <p id="description">Please fill out all the required information.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >First Name:
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your first name"
+            required
+          />
+        </label>
+        <label
+          >Last Name:
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your last name"
+            required
+          />
+        </label>
+        <label id="email-label"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label
+          >Password:
+          <input id="password" placeholder="Set a password" required />
+        </label>
+        <label
+          >Re- Enter Your Password ( Please enter the same password that you
+          entered above):
+          <input
+            id="re-password"
+            placeholder="Re-enter your password"
+            requried
+          />
+        </label>
+        <label id="number-label"
+          >Phone Number(optional):
+          <input
+            id="number"
+            type="number"
+            min="1"
+            max="10"
+            placeholder="Enter your phone number"
+          />
+        </label>
+
+        <label for="age"
+          >Choose your age range:
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Kindergarten(3-7)</option>
+            <option value="2">Primary(6-12)</option>
+            <option value="3">Secondary(10-16)</option>
+            <option value="4">High school(14-19)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <div>
+        <label>Gender:</label>
+      </div>
+      <div>
+        <label>Male </label><input type="radio" value="male" name="gender" />
+        <label> Female </label
+        ><input type="radio" value="female" name="gender" />
+        <label>Other </label><input type="radio" value="other" name="gender" />
+      </div>
+      <div>
+        <label>Courses to apply:</label>
+        <label>B.Sc<input type="checkbox" value="B.Sc" /></label>
+        <label>BA<input type="checkbox" value="BA" /></label>
+        <label>B.Com<input type="checkbox" value="B.Com" /></label>
+        <label>BCA <input type="checkbox" value="BCA" /></label>
+        <label>M.Sc <input type="checkbox" value="M.Sc " /></label>
+        <label>MA <input type="checkbox" value="MA" /></label>
+        <label>M.Com <input type="checkbox" value="M.Com" /></label>
+        <label>MCA<input type="checkbox" value="MCA" /></label>
+      </div>
+      <div>
+        <label>
+          Add a comment:
+          <textarea
+            id="comment "
+            name="comment"
+            rows="2"
+            cols="20"
+            placeholder="..."
+          >
+          </textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
